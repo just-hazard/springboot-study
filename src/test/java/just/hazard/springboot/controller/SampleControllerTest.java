@@ -1,4 +1,4 @@
-package just.hazard.springboot;
+package just.hazard.springboot.controller;
 
 import org.junit.Rule;
 import org.junit.jupiter.api.Test;
