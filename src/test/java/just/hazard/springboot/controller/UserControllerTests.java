@@ -2,7 +2,7 @@ package just.hazard.springboot.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import just.hazard.springboot.entity.User;
+import just.hazard.springboot.entity.Member;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -29,7 +29,7 @@ public class UserControllerTests {
 
     @Test
     public void createUser_Json() throws Exception {
-        User user = new User();
+        Member user = new Member();
         user.setId(1l);
         user.setUsername("hazard");
         user.setPassword("1234");

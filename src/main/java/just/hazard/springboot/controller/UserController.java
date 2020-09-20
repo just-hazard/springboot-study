@@ -1,6 +1,6 @@
 package just.hazard.springboot.controller;
 
-import just.hazard.springboot.entity.User;
+import just.hazard.springboot.entity.Member;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,8 +17,8 @@ public class UserController {
 
     @PostMapping("/user")
     @ResponseStatus(HttpStatus.CREATED)
-    public User create()  {
-        User user = new User();
+    public Member create()  {
+        Member user = new Member();
         user.setId(1l);
         user.setUsername("hazard");
         user.setPassword("1234");
